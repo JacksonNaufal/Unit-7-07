@@ -17,11 +17,11 @@ function button () {
   if (numone < 0) {
     negative = !negative * -1
     numone = Math.abs(numone)
-   }
-   if (numtwo < 0) {
+  }
+  if (numtwo < 0) {
     negative = !negative * -1
     numtwo = Math.abs(numtwo)
-   }
+  }
 
   for (counter = 0; counter < numone; counter = counter + 1) {
     answer = answer + numtwo
