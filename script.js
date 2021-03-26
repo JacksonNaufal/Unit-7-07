@@ -6,6 +6,7 @@ let numthree = 0
 let answer = 0
 let calculation = 0
 let counter = 0
+let negative = false
 
 function button () {
   numone = document.getElementById('input').value
@@ -14,13 +15,24 @@ function button () {
   numtwo = parseInt(numtwo)
   numthree = parseInt(numthree)
 
+   if (numone < 0) {
+     negative = !negative * -1
+     numone = Math.abs(numone)
+   }
 
+   if (numtwo < 0) {
+     negative = !negative * -1
+     numtwo = Math.abs(numtwo)
+   }
+
+  
   for (counter = 0; counter < numone; counter = counter + 1) {
     answer = answer + numtwo
-    calculation = calculation - numtwo
+ }
+ if (negative) {
+   answer = 0 - answer
  }
  document.getElementById('answer').innerHTML =
   answer
-  document.getElementById('answertwo').innerHTML =
- calculation
+
  }
