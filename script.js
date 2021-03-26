@@ -15,24 +15,23 @@ function button () {
   numtwo = parseInt(numtwo)
   numthree = parseInt(numthree)
 
-   if (numone < 0) {
-     negative = !negative * -1
-     numone = Math.abs(numone)
+  if (numone < 0) {
+    negative = !negative * -1
+    numone = Math.abs(numone)
    }
 
    if (numtwo < 0) {
-     negative = !negative * -1
-     numtwo = Math.abs(numtwo)
+    negative = !negative * -1
+    numtwo = Math.abs(numtwo)
    }
 
   
   for (counter = 0; counter < numone; counter = counter + 1) {
     answer = answer + numtwo
- }
- if (negative) {
-   answer = 0 - answer
- }
- document.getElementById('answer').innerHTML =
+  }
+  if (negative) {
+    answer = 0 - answer
+  }
+  document.getElementById('answer').innerHTML =
   answer
-
- }
+}
