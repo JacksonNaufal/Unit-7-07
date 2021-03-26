@@ -9,7 +9,6 @@ let negative = false
 document.getElementById('button').addEventListener('click', button)
 // This is my event listenr so the program knows what to use, and what to click
 
-
 function button () {
   numone = document.getElementById('input').value
   numtwo = document.getElementById('input2').value
