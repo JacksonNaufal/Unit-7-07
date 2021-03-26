@@ -24,6 +24,3 @@ function button () {
   document.getElementById('answertwo').innerHTML =
  calculation
  }
-
-
-
